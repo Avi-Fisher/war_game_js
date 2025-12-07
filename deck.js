@@ -66,6 +66,5 @@ function compare_cards(p1, p2) {
 
 }
 
-console.log(shuffle(create_deck()));
 
 
