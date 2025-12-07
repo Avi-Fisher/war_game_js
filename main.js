@@ -1,6 +1,3 @@
-const ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-const suites = ["H", "C", "D", "S"];
-
 function create_card(rank, suite) {
   const specialCards = [11, 12, 13, 14];
   viewRank = rank;
@@ -24,5 +21,17 @@ function create_card(rank, suite) {
   return { rank: viewRank, suite: suite, value: rank };
 }
 
+function create_deck() {
+  const ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  const suites = ["H", "C", "D", "S"];
+  const myDeck = [];
+
+  suites.forEach((suite) => {
+    ranks.forEach((rank) => {
+      myDeck.push(create_card(rank, suite));
+    });
+  });
+  return myDeck;
+}
 
 
