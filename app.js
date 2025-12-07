@@ -11,14 +11,12 @@ function full_game() {
 
     let running = true
 
-    
-    
 
     while (running) {
         
         running = play_round(players.player, players.ai)
     }
-    check_win(players.player, players.ai)
+    check_win(players.player, players.ai)    
 }
 
 
