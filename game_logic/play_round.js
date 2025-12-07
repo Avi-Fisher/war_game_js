@@ -8,7 +8,7 @@ export default function play_round(player, ai) {
             winner = player
         case "P2":
             winner = ai
-        case "war"
+        case "war":
             winner = "war"    
     }
 
