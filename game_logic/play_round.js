@@ -9,20 +9,13 @@ export default function play_round(player, ai) {
         case "P2":
             winner = ai
         case "war":
-            winner = "war"    
+            winner = []    
     }
-
-    if (winner !== "war"){
 
         winner.won_pile.push([player.hand.shift(), ai.hand.shift()])
-    } else {
-   
-        player.hand.push(player.hand.shift()) 
-        ai.hand.push(ai.hand.shift())     
-    }
 
-}
-
+}        
+    
 
 
 
