@@ -1,4 +1,4 @@
-function create_player(name = "Ai") {
+export default function create_player(name = "Ai") {
 
     let player = {
 
